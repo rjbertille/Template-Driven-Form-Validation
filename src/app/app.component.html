@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Template {{title}}!
+  </h1> 
+</div>
+<div class="container">
+  <h2>User Data</h2>
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" clas="form-control" name="name" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" clas="form-control" name="email" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Street</label>
+      <input type="text" clas="form-control" name="street" ngModel>
+    </div>
+    <div class="form-group">
+      <label>City</label>
+      <input type="text" clas="form-control" name="city" ngModel>
+    </div>
+    <div class="form-group">
+      <label>PostalCode</label>
+      <input type="text" clas="form-control" name="postalcode" ngModel>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
